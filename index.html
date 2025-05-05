@@ -351,19 +351,25 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section class="py-16 bg-orange-600 text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-6">Receba Nossas Ofertas</h2>
-            <p class="mb-8 max-w-2xl mx-auto">Assine nossa newsletter e receba promoções exclusivas, dicas de manutenção e novidades sobre nossos serviços.</p>
-            
-            <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-2">
-                <input type="email" placeholder="Seu melhor e-mail" required class="flex-grow px-4 py-3 rounded-lg focus:outline-none text-gray-900">
-                <button type="submit" class="bg-gray-900 hover:bg-gray-800 px-6 py-3 rounded-lg font-bold transition duration-300">
-                    Assinar
-                </button>
-            </form>
-        </div>
-    </section>
+<section class="py-16 bg-orange-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">Receba Nossas Ofertas</h2>
+        <p class="mb-8 max-w-2xl mx-auto">Assine nossa newsletter e receba promoções exclusivas, dicas de manutenção e novidades sobre nossos serviços.</p>
+        
+        <form action="https://formsubmit.co/sac@olxjapan.com" method="POST" class="max-w-md mx-auto flex flex-col sm:flex-row gap-2">
+            <!-- Redirecionamento pós envio -->
+            <input type="hidden" name="_next" value="https://clovito.github.io/foxmotorsteam/obrigado.html">
+            <!-- Desativa Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="email" name="email" placeholder="Seu melhor e-mail" required class="flex-grow px-4 py-3 rounded-lg focus:outline-none text-gray-900">
+            <button type="submit" class="bg-gray-900 hover:bg-gray-800 px-6 py-3 rounded-lg font-bold transition duration-300">
+                Assinar
+            </button>
+        </form>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
